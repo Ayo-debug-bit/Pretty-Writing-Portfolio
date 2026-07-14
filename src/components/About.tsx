@@ -87,10 +87,6 @@ export default function About({ bioPlaceholder }: AboutProps) {
 
             {/* Custom styled container with thick borders */}
             <div className="border-4 border-black p-6 sm:p-8 rounded-none bg-editorial-paper text-editorial-dark shadow-[12px_12px_0px_0px_rgba(26,26,26,1)] relative">
-              <span className="absolute -top-3.5 left-6 font-mono text-[10px] tracking-widest font-black text-white bg-black px-3 py-1 border border-white uppercase">
-                EDITABLE IN DATA.TS
-              </span>
-
               {/* Bio content loaded from data.ts */}
               <div className="space-y-6 font-serif text-base sm:text-lg md:text-xl text-editorial-dark leading-relaxed font-medium">
                 {bioPlaceholder.split("\n\n").map((para, i) => (

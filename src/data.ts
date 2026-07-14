@@ -48,11 +48,11 @@ export const writingData: WritingPortfolioData = {
   substack: "ayomideoluyemi.substack.com",
   phone: "+234 810 10 82258",
   location: "Lagos, Nigeria",
-  bioPlaceholder: `I'm Ayomide Oluyemi, a writer drawn to the parts of life people feel but rarely say out loud — overthinking, grief, longing, the strange comedy of a crush. I write to name what's usually left unspoken, and to make readers feel a little less alone in whatever they're carrying.
+  bioPlaceholder: `I'm Ayomide Oluyemi, a creative writer drawn to emotions and feelings that people experience but usually leave unspoken. I write with the aim to make my readers feel deeply.
 
-My writing lives at the intersection of reflection and storytelling: personal essays and poetry that sit with a feeling until it makes sense, and short fiction that borrows real emotional texture to build character. I've spent the last few years writing consistently on my Substack, Ayo's Thoughts, where I explore themes of emotional awareness, grief, love, and growing up.
+My writing mostly focuses on reflection, personal essays and poetry that discuss feelings that are hard to put into words. I also write short fiction that showcases real emotions and thoughts in a fictional character. I've spent some time writing consistently on my Substack, Ayo's Thoughts, where I explore themes of emotional awareness, grief, love, faith and the bittersweet feeling of growing up.
 
-Alongside writing, I bring a background in communications and graphic design, having served as Public Relations Officer for my university's computing students' association — so I think about how a piece of writing looks and travels, not just how it reads.`,
+Alongside writing, I bring a background in communications and graphic design, having served as the Public Relations Officer for my university's computing students' association.`,
   essays: [
     {
       id: "little-miss-not-so-aware",
