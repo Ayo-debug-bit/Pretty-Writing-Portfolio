@@ -1,0 +1,6 @@
+{
+  "name": "Ayomide Oluyemi Portfolio",
+  "description": "A bold, single-page writing portfolio showcasing the essays, poetry, and short fiction of Ayomide Oluyemi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
