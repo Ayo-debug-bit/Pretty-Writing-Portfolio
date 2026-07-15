@@ -15,13 +15,13 @@ export default function Hero({ name, tagline, substack }: HeroProps) {
       className="min-h-screen w-full bg-editorial-paper flex flex-col justify-between pt-32 pb-12 px-6 md:px-12 lg:px-20 relative overflow-hidden"
     >
       {/* Decorative vertical texts - Broadstreet Magazine style */}
-      <div className="absolute left-6 bottom-32 hidden lg:flex flex-col gap-2 items-center rotate-180 [writing-mode:vertical-lr] font-mono text-[9px] tracking-[0.3em] text-slate-400 uppercase">
+      <div className="absolute left-6 lg:left-8 top-40 hidden lg:flex flex-col gap-2 items-center rotate-180 [writing-mode:vertical-lr] font-mono text-[9px] tracking-[0.3em] text-slate-600 uppercase">
         <span>EST. 2026</span>
-        <span className="w-12 h-[1px] bg-black my-2"></span>
+        <span className="w-12 h-[1px] bg-black/30 my-2"></span>
         <span>WRITER & STORYTELLER</span>
       </div>
 
-      <div className="absolute right-12 top-40 hidden xl:block font-mono text-[9px] tracking-[0.4em] uppercase text-slate-400 [writing-mode:vertical-lr]">
+      <div className="absolute right-12 top-40 hidden xl:block font-mono text-[9px] tracking-[0.4em] uppercase text-slate-600 [writing-mode:vertical-lr]">
         AYOMIDE OLUYEMI // ISSUE NO. 01
       </div>
 

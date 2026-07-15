@@ -1,14 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "motion/react";
-import { Upload, Info, Heart, Award, ArrowRight } from "lucide-react";
+import { Heart, Award, ArrowRight } from "lucide-react";
 
 interface AboutProps {
   bioPlaceholder: string;
 }
 
 export default function About({ bioPlaceholder }: AboutProps) {
-  const [imgError, setImgError] = useState(false);
-
   return (
     <section
       id="about"
@@ -28,46 +26,16 @@ export default function About({ bioPlaceholder }: AboutProps) {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          {/* Left Column: Image with dynamic fallback */}
+          {/* Left Column: Image with direct URL */}
           <div className="lg:col-span-5 flex justify-center">
             <div className="relative w-full max-w-[400px] aspect-[4/5] rounded-none p-2 bg-white border-4 border-black shadow-[12px_12px_0px_0px_rgba(26,26,26,1)]">
               <div className="w-full h-full rounded-none overflow-hidden bg-editorial-dark relative flex items-center justify-center">
-                {!imgError ? (
-                  <img
-                    src="/assets/profile.jpg"
-                    alt="Ayomide Oluyemi"
-                    referrerPolicy="no-referrer"
-                    onError={() => setImgError(true)}
-                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                  />
-                ) : (
-                  // Highly styled placeholder prompting user upload
-                  <div className="absolute inset-0 p-6 flex flex-col justify-between text-center bg-editorial-dark text-white">
-                    <div className="flex justify-between items-center w-full">
-                      <span className="font-mono text-[9px] tracking-widest text-editorial-orange font-bold">PORTRAIT_FEED</span>
-                      <span className="w-2.5 h-2.5 bg-editorial-orange animate-pulse"></span>
-                    </div>
-
-                    <div className="my-auto flex flex-col items-center gap-4 px-2">
-                      <div className="p-4 bg-editorial-orange text-white border-2 border-white rounded-none shadow-[4px_4px_0px_0px_rgba(255,255,255,0.2)]">
-                        <Upload size={28} />
-                      </div>
-                      <p className="font-serif text-xl font-bold uppercase tracking-wide">
-                        Photo Placeholder
-                      </p>
-                      <p className="font-sans text-xs text-slate-300 leading-relaxed">
-                        To display your actual photo pixel-for-pixel here, upload/drag an image named{" "}
-                        <span className="font-mono text-white underline decoration-editorial-orange decoration-2 font-bold">profile.jpg</span> into
-                        the <span className="font-mono text-white underline decoration-editorial-orange decoration-2 font-bold">/assets/</span> folder.
-                      </p>
-                    </div>
-
-                    <div className="font-mono text-[9px] text-editorial-orange/80 flex items-center justify-center gap-1.5 border border-white/15 py-1.5 bg-black/20 font-bold uppercase tracking-wider">
-                      <Info size={10} />
-                      <span>Ready to render statically</span>
-                    </div>
-                  </div>
-                )}
+                <img
+                  src="https://fiaxwdahgvoftfuzxhud.supabase.co/storage/v1/object/public/portfolio-image/Ayomide%20Oluyemi(wallpaper).jpg"
+                  alt="Ayomide Oluyemi"
+                  referrerPolicy="no-referrer"
+                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                />
               </div>
 
               {/* Decorative accent stamp */}
